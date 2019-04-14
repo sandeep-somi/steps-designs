@@ -1,0 +1,239 @@
+body {
+  margin: 50px;
+  background-color: $alt-gray;
+  font-family: 'Roboto', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.steps-wrapper {
+  width: 800px;
+  height: 200px;
+}
+
+.step {
+  position: relative;
+  div.vr-first {
+    min-height: 200px;
+    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.first {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    &.last {
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+    &.org {
+      background-color: $alt-organge;
+    }
+    &.red {
+      background-color: $alt-red;
+    }
+    &.purple {
+      background-color: $alt-purple;
+    }
+    &.green {
+      background-color: $alt-navy-blue;
+    }
+    .dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 50px;
+      border: 8px solid $alt-gray-1;
+      position: absolute;
+      box-shadow: $shaddow;
+      z-index: 20;
+    }
+    .slide {
+      position: absolute;
+      height: 14px;
+      left: 9px;
+      width: 55px;
+      z-index: 15;
+      &.org {
+        background-color: $alt-organge;
+      }
+      &.red {
+        background-color: $alt-red;
+      }
+      &.purple {
+        background-color: $alt-purple;
+      }
+      &.green {
+        background-color: $alt-navy-blue;
+      }
+    }
+    .b-ring {
+      position: absolute;
+      height: 150px;
+      left: 55px;
+      width: 150px;
+      border-radius: 150px;
+      border: 8px solid $alt-gray-1;
+      box-shadow: $shaddow;
+      padding: 14px;
+      z-index: 10;
+      &.org {
+        background-color: $alt-organge;
+      }
+      &.red {
+        background-color: $alt-red;
+      }
+      &.purple {
+        background-color: $alt-purple;
+      }
+      &.green {
+        background-color: $alt-navy-blue;
+      }
+      .inner-ring {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $alt-gray-1;
+        padding: 16px;
+        text-align: center;
+        padding-top: 20px;
+        &.org {
+          color: $alt-organge;
+        }
+        &.red {
+          color: $alt-red;
+        }
+        &.purple {
+          color: $alt-purple;
+        }
+        &.green {
+          color: $alt-navy-blue;
+        }
+        p {
+          font-size: 32px;
+          font-weight: bold;
+        }
+      }
+    }
+    .semi-ring {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 160px;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      z-index: 5;
+      &.org {
+        background-color: $alt-organge;
+      }
+      &.red {
+        background-color: $alt-red;
+      }
+      &.purple {
+        background-color: $alt-purple;
+      }
+      &.green {
+        background-color: $alt-navy-blue;
+      }
+    }
+    .main-div {
+      background-color: #e8e8e8;
+      width: 500px;
+      height: 120px;
+      position: absolute;
+      left: 160px;
+      border-top-right-radius: 60px;
+      border-bottom-right-radius: 60px;
+      z-index: 0;
+      padding: 14px 120px;
+      box-shadow: $shaddow;
+      .main {
+        position: relative;
+        &.org {
+          color: $alt-organge;
+        }
+        &.red {
+          color: $alt-red;
+        }
+        &.purple {
+          color: $alt-purple;
+        }
+        &.green {
+          color: $alt-navy-blue;
+        }
+        h1 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          color: #555;
+        }
+      }
+      .semi-ring-right {
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        top: -4px;
+        right: -108px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px;
+        &.org {
+          background-color: $alt-organge;
+        }
+        &.red {
+          background-color: $alt-red;
+        }
+        &.purple {
+          background-color: $alt-purple;
+        }
+        &.green {
+          background-color: $alt-navy-blue;
+        }
+        i {
+          color: #e8e8e8;
+          font-size: 52px;
+        }
+      }
+    }
+    .flat-semi-ring {
+      width: 150px;
+      height: 100px;
+      position: absolute;
+      right: 45px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      z-index: -1;
+      box-shadow: $shaddow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 45px;
+      font-size: 22px;
+      color: #fff;
+      font-weight: bold;
+      &.org {
+        background-color: $alt-organge;
+      }
+      &.red {
+        background-color: $alt-red;
+      }
+      &.purple {
+        background-color: $alt-purple;
+      }
+      &.green {
+        background-color: $alt-navy-blue;
+      }
+    }
+  }
+}
